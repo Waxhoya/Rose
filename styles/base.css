@@ -1,7 +1,8 @@
 body{
   font-family: 'Shadows Into Light', cursive;
   background-color: #282C34;
-  color: #E2C08D;
+  /*color: #E2C08D;*/
+  color: yellow;
 }
 
 h1 {
@@ -16,8 +17,13 @@ h6 {
 
 p {
   padding: 5%;
+  font-size: 18px;
+  letter-spacing: 0.2em;
 }
-a{
+
+a {
   text-decoration: none;
-  color: #B63838;
+  /*color: #B63838;*/
+  color: magenta;
+  font-weight: bolder;
 }

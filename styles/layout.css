@@ -11,7 +11,7 @@
   }
 
   .main-nav {
-    padding: .2em .2em .2em 2em;
+    padding: .2em .2em .2em .2em;
   }
 
   .main-nav ul {
@@ -20,11 +20,17 @@
 
   .main-nav ul li {
     display: inline;
+		margin-left: 18px;
+		padding:  2px 4px 2px 4px;
     border-bottom: none;
+		font-size: 18px;
+		font-weight: bolder;
+		letter-spacing: 0.1em;
   }
 
   .main-nav ul li:hover a {
-    color: #29506D;
+    /*color: #29506D;*/
+		color: blue;
   }
 
 }
