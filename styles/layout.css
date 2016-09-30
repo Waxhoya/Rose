@@ -1,6 +1,10 @@
 
-.nav ul {
-	display: inline-block;
+.main-nav ul {
+	display: none;
+}
+
+.main-nav:hover ul {
+	display: block;
 	list-style: none;
 }
 
