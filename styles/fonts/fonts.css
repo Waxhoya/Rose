@@ -36,3 +36,6 @@ icon@font-face {
 .icon-stackoverflow:before {
   content: "\ead0";
 }
+.icon-menu:before {
+  content: "\e9bd"
+}
