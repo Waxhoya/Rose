@@ -19,8 +19,24 @@
 }
 
 @media only screen and (max-width: 500px) {
+
+	body {
+		margin-left: .5em;
+		margin-right: .5em;
+	}
 	h1 {
 		font-size: 1.5em;
+	}
+	h3{
+		margin-top: 2em;
+		margin-bottom: .2em;
+		background-color: #505662;
+	}
+	p {
+		font-size: .8em;
+	}
+	h5 {
+		margin: 0px;
 	}
 
 }
