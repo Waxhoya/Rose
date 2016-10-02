@@ -14,10 +14,10 @@ var developerBlog = [
 		publishedOn: ''
   },
 	{
-		title: "Elliptic Curve Crypto: BlockChain Primer",
-		type: "blockchain",
-		author: "AJ Reel",
-		body: "<p>How to explain Elliptic curve cryptography(ECC). ECC keeps messages and data private by transforming with multiplication based on a public key. When the information is needed again the message is divided by a private key to reveal the message. What keeps ECC secure is the math, factoring is much more complex and resource intensive than multiplication. Math proofs and significant academic research has identified ECC as practically impossible to crack using existing technology.</p>",
+		title: "",
+		type: "",
+		author: "",
+		body: "",
 		publishedOn: ''
 	}
 ];
