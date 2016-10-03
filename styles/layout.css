@@ -12,14 +12,20 @@
   padding: 0;
   list-style: none;
   clear: both;
+	width: 90%;
+	background-color: #1F2328;
 }
+
 
 .main-nav:hover ul {
   display: block;
 }
+.main-nav ul li:hover a{
+	background-color: #979FAD;
+
+}
 
 @media only screen and (max-width: 500px) {
-
 	h1 {
 		font-size: 1.5em;
 	}
@@ -38,7 +44,6 @@
 	h5 {
 		margin: 0px;
 	}
-
 }
 
 @media only screen and (min-width: 501px) and (max-width: 639px) {
@@ -63,10 +68,6 @@
 }
 
 @media only screen and (min-width: 640px) {
-	.icon-menu {
-    display: none;
-  }
-
   .main-nav {
     padding: .2em .2em .2em 2em;
 		font-size: 1em;
@@ -74,6 +75,7 @@
 
   .main-nav ul {
     display: block;
+		width: 95%;
   }
 
   .main-nav ul li {
@@ -88,12 +90,11 @@
 	h1 {
 		font-size: 3em;
 	}
-
 	h3 {
 		font-size: 1.5em;
 	}
-}
 
+}
 
 @media only screen and (min-width: 800px) {
 	h1 {

@@ -1,11 +1,11 @@
 var information = [];
 
-function BlogPost(catagories) {
-  this.title = catagories.title; //Title of info
-  this.catagories = catagories.type;
-  this.author = catagories.author;
-  this.body = catagories.body; //Summery of info
-  this.publishedOn = catagories.publishedOn;
+function BlogPost(category) {
+  this.title = category.title; //Title of info
+  this.category = category.type;
+  this.author = category.author;
+  this.body = category.body; //Summery of info
+  this.publishedOn = category.publishedOn;
 }
 
 BlogPost.prototype.toHtml = function() {
@@ -21,9 +21,11 @@ developerBlog.forEach(function(element){
 
 information.forEach(function(bPost){
   $('#blog').append(bPost.toHtml());
-  console.log('appending story: '+bPost.infoTitle);
+  console.log('appending story: '+bPost.title);
   console.log(bPost.category);
-  $('#author-filter').append('<option value ="' + bPost.author+ '">' +bPost.author+ '</option>');
+  if ($('#author-filter option[value="' + bPost.authtor + '"]').length === 0) {
+    $('#author-filter').append('<option value ="' + bPost.author+ '">' +bPost.author+ '</option>');
+  }
   if ($('#category-filter option[value="' + bPost.category + '"]').length === 0) {
     $('#category-filter').append('<option value ="' + bPost.category+ '">' +bPost.category+ '</option>');
   }
