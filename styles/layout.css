@@ -5,9 +5,6 @@
 }
 
 .main-nav ul {
-  /* NOTE: We are by defualt hiding the main nav list because we are
-      expecting the UI to be mobile, therefore our new icon menu
-      takes its place. */
   display: none;
   padding: 0;
   list-style: none;
