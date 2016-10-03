@@ -59,7 +59,7 @@
 		background-color: #505662;
 	}
 	p {
-		font-size: .8em;
+		font-size: 1em;
 	}
 	h5 {
 		margin: 0px;
@@ -68,7 +68,6 @@
 
 @media only screen and (min-width: 640px) {
   .main-nav {
-    padding: .2em .2em .2em 2em;
 		font-size: 1em;
   }
 
@@ -91,6 +90,7 @@
 	}
 	h3 {
 		font-size: 1.5em;
+		background-color: #505662;
 	}
 	.icon-menu {
 		display: none;
@@ -100,5 +100,8 @@
 @media only screen and (min-width: 800px) {
 	h1 {
 		font-size: 4em;
+	}
+	h3 {
+		background-color: #505662;
 	}
 }
