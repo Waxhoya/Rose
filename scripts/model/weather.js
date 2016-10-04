@@ -2,7 +2,6 @@ var weatherAPI = {};
 
 $.get('http://api.wunderground.com/api/f25e47528444be94/conditions/q/OR/Portland.json')
 	.done(function(data){
-	console.log(data);
 	weatherAPI = data;
 	$(Weather).text(
 		"PDX: "+
