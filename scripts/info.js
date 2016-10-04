@@ -1,21 +1,33 @@
 (function(module) {
 
-  var information = [];
-
-  function BlogPost(category) {
-    this.title = category.title; //Title of info
-    this.category = category.type;
-    this.author = category.author;
-    this.body = category.body; //Summery of info
-    this.publishedOn = category.publishedOn;
+  function BlogPost(data) {
+    Object.keys(data).forEach(function(ele){this[ele] = data[ele];}, this); //creates a object of the same type and keys as it is passed
   }
 
-  BlogPost.prototype.toHtml = function() {
-    var source = $('#blog-template').html();
-    var template = Handlebars.compile(source);
-    var html = template(this);
-    return html;
+  BlogPost.allBlogs = [];
+
+  BlogPost.prototype.toHtml = function(template) {
+    var template = Handlebars.compile($(template).html()); //  Why .text()? for XSS security?
+    return template(this);
   };
+
+  BlogPost.createTable = function() {
+
+    webDB.execute(
+      'CREATE TABLE IF NOT EXISTS blogDB (' +
+      'id INTEGER PRIMARY KEY,'+
+      'title VARCHAR(160) NOT NULL,'+
+      'author VARCHAR(48) NOT NULL,'+
+      'subject VARCHAR(24) NOT NULL,'+
+      'publishDate DATETIME,'+
+      'body TEXT NOT NULL);',
+    function(){
+      console.log('Table set up');
+    }
+    );
+  };
+
+
 
   developerBlog.forEach(function(element){
     information.push(new BlogPost(element));
@@ -32,4 +44,5 @@
       $('#category-filter').append('<option value ="' + bPost.category+ '">' +bPost.category+ '</option>');
     }
   });
+  module.BlogPost = BlogPost;
 })(window);

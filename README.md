@@ -29,3 +29,6 @@ https://fonts.google.com/selection?selection.family=Architects+Daughter|Courgett
 
 ### Blog and project filters
 These were built off of code done in code fellows classes and partner programming.
+
+## IFFE info.js
+Much of the outline of the SQL database and IFFE is from Code Fellows lab example and Stephanie McCalley. Her assistance was essential for overcoming a plateau.
