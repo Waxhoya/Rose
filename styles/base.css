@@ -35,3 +35,11 @@ a {
 .main-nav tab {
   background-color: inherit;
 }
+#weather {
+  font-size: .6em;
+  font-family: 'Exo', sans-serif;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
