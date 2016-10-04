@@ -1,7 +1,6 @@
-
+(function(module) {
 
   var information = [];
-
 
   function BlogPost(category) {
     this.title = category.title; //Title of info
@@ -33,3 +32,4 @@
       $('#category-filter').append('<option value ="' + bPost.category+ '">' +bPost.category+ '</option>');
     }
   });
+})(window);
