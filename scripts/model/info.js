@@ -29,9 +29,9 @@
 
 
 
-  developerBlog.forEach(function(element){
-    information.push(new BlogPost(element));
-  });
+  // developerBlog.forEach(function(element){
+  //   information.push(new BlogPost(element));
+  // });
 
   information.forEach(function(bPost){
     $('#blog').append(bPost.toHtml());

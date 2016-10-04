@@ -6,7 +6,7 @@ $.get('http://api.wunderground.com/api/f25e47528444be94/conditions/q/OR/Portland
 	$(Weather).text(
 		"PDX: "+
 		weatherAPI.current_observation.weather + " "+
-		weatherAPI.current_observation.temp_c + "C. Rain: " +
+		weatherAPI.current_observation.temp_f + "C. Rain: " +
 		weatherAPI.current_observation.precip_today_string + "today."
 	);
 		if (parseInt(weatherAPI.current_observation.temp_f) > 65) {
