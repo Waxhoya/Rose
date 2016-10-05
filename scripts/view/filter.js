@@ -6,7 +6,6 @@ blogFilter.filterByAuthor = function() {
 	$('#author-filter').on('change', function() {
 		if ($(this).val()) {
 			$('entry').hide();
-			console.log('NO READING THIS', this);
 			$('entry[data-author="' + $(this).val() + '"]').fadeIn();
 		} else {
       $('entry').fadeIn();
@@ -20,7 +19,7 @@ blogFilter.filterBySubject = function() {
 	$('#category-filter').on('change', function() {
 		console.log('filter');
 		if ($(this).val()) {
-			$('tagetTODO').hide();
+			$('entry').hide();
 			$('entry[data-author="' + $(this).val() + '"]').fadeIn();
 		} else {
       $('.entry').fadeIn();
