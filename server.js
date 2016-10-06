@@ -14,4 +14,10 @@ function getGit(request, response) {(
   })(request, response)
 );};
 
+// render index if nothing
+app.get('/', function(request, response) {
+  response.render('index');
+});
+
+
 app.get('/github/*', getGit);
