@@ -44,6 +44,6 @@
   //     $('#category-filter').append('<option value ="' + bPost.category+ '">' +bPost.category+ '</option>');
   //   }
   // });
-  BlogPost.createTable()
+  BlogPost.createTable();
   module.BlogPost = BlogPost;
 })(window);

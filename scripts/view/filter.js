@@ -18,7 +18,7 @@ blogFilter.filterBySubject = function() {
   $('#category-filter').on('change', function() {
     console.log('filter');
     if ($(this).val()) {
-    	$('entry').hide();
+      $('entry').hide();
       $('entry[data-author="' + $(this).val() + '"]').fadeIn();
     } else {
       $('.entry').fadeIn();
