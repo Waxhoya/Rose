@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Waxhoya/Rose/issues"
   },
-  "homepage": "https://github.com/Waxhoya/Rose#readme"
+  "homepage": "https://github.com/Waxhoya/Rose#readme",
+  "dependencies": {
+    "express-request-proxy": "^2.0.0"
+  }
 }
