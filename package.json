@@ -1,0 +1,19 @@
+{
+  "name": "'project-rose'",
+  "version": "1.0.0",
+  "description": "\"A profile of the work I have created and the events that are important in my life.\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waxhoya/Rose.git"
+  },
+  "author": "Albert Reel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waxhoya/Rose/issues"
+  },
+  "homepage": "https://github.com/Waxhoya/Rose#readme"
+}
