@@ -2,11 +2,11 @@
 var blogFilter = {};
 
 blogFilter.filterByAuthor = function() {
-	$('#author-filter').on('change', function() {
-		if ($(this).val()) {
-			$('entry').hide();
-			$('entry[data-author="' + $(this).val() + '"]').fadeIn();
-		} else {
+  $('#author-filter').on('change', function() {
+    if ($(this).val()) {
+      $('entry').hide();
+      $('entry[data-author="' + $(this).val() + '"]').fadeIn();
+    } else {
       $('entry').fadeIn();
       $('blog-template').hide();
     }
@@ -15,12 +15,12 @@ blogFilter.filterByAuthor = function() {
 };
 
 blogFilter.filterBySubject = function() {
-	$('#category-filter').on('change', function() {
-		console.log('filter');
-		if ($(this).val()) {
-			$('entry').hide();
-			$('entry[data-author="' + $(this).val() + '"]').fadeIn();
-		} else {
+  $('#category-filter').on('change', function() {
+    console.log('filter');
+    if ($(this).val()) {
+    	$('entry').hide();
+      $('entry[data-author="' + $(this).val() + '"]').fadeIn();
+    } else {
       $('.entry').fadeIn();
       $('blog-template').hide();
     }
@@ -28,6 +28,5 @@ blogFilter.filterBySubject = function() {
   });
 };
 
-
-blogFilter.filterBySubject();
 blogFilter.filterByAuthor();
+blogFilter.filterBySubject();

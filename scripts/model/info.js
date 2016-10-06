@@ -33,17 +33,17 @@
   //   information.push(new BlogPost(element));
   // });
 
-  information.forEach(function(bPost){
-    $('#blog').append(bPost.toHtml());
-    console.log('appending story: '+bPost.title);
-    console.log(bPost.category);
-    if ($('#author-filter option[value="' + bPost.author + '"]').length === 0) {
-      $('#author-filter').append('<option value ="' + bPost.author+ '">' +bPost.author+ '</option>');
-    }
-    if ($('#category-filter option[value="' + bPost.category + '"]').length === 0) {
-      $('#category-filter').append('<option value ="' + bPost.category+ '">' +bPost.category+ '</option>');
-    }
-  });
+  // information.forEach(function(bPost){
+  //   $('#blog').append(bPost.toHtml());
+  //   console.log('appending story: '+bPost.title);
+  //   console.log(bPost.category);
+  //   if ($('#author-filter option[value="' + bPost.author + '"]').length === 0) {
+  //     $('#author-filter').append('<option value ="' + bPost.author+ '">' +bPost.author+ '</option>');
+  //   }
+  //   if ($('#category-filter option[value="' + bPost.category + '"]').length === 0) {
+  //     $('#category-filter').append('<option value ="' + bPost.category+ '">' +bPost.category+ '</option>');
+  //   }
+  // });
   BlogPost.createTable()
   module.BlogPost = BlogPost;
 })(window);
