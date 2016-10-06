@@ -11,7 +11,7 @@
     })
     .done(function(data){
       gitAccount = data;
-      console.log("Reception of github info", data);
+      console.log('Reception of github info', data);
     });
   };
 
